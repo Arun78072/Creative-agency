@@ -79,6 +79,14 @@ a {
 }
 
 /* Global css for hide break tag in responsive*/
+@media (max-width: 786px) {
+  span#spanimg1 {
+    left: 0px !important;
+  }
+  span#spanimg2 {
+    right: -10px !important;
+  }
+}
 @media (max-width: 450px) {
   .hide_br > br {
     display: none;

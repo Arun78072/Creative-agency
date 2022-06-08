@@ -10,7 +10,8 @@ module.exports = {
         Quicksand: ["Quicksand", "sans-serif"],
       },
       dropShadow: {
-        ds1: ["0px 8px 24px rgba(0, 0, 0, 0.05)"],
+        blue: "0px 4px 8px rgba(55, 125, 255, 0.5)",
+        block: "4px 4px 30px rgba(0, 0, 0, 0.1)",
       },
       screens: {
         xxl: { min: "1200px" },
@@ -23,7 +24,7 @@ module.exports = {
       animation: {
         wiggle: "wiggle 5s ease-in-out infinite",
         wiggle1: "wiggle1 5s ease-in-out infinite",
-        wiggle12: "wiggle12 200s ease-in-out infinite",
+        rotate: "rotate 150s ease-in-out infinite",
       },
       keyframes: {
         wiggle: {
@@ -34,7 +35,7 @@ module.exports = {
           "0%, 100%": { transform: "translateY(0px)" },
           "50%": { transform: "translateY(-10px)" },
         },
-        wiggle12: {
+        rotate: {
           "0%, 100%": { transform: "rotate(0deg)" },
           "50%": { transform: "rotate(380deg)" },
         },

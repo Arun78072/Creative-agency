@@ -56,7 +56,7 @@ const About = () => {
               content look interesting and make people look for your business
             </p>
             <div className="flex gap-[20px] mt-6 sm:justify-evenly">
-              <button className="bg-[#377DFF] dark:bg-[#E2E2E2] text-[#FFFFFF] dark:text-[#0E0E0E] py-2 px-7 rounded-[50px] shadow-[0px 4px 8px rgba(55, 125, 255, 0.5)]">
+              <button className="bg-[#377DFF] dark:bg-[#E2E2E2] text-[#FFFFFF] dark:text-[#0E0E0E] py-2 px-7 rounded-[50px] drop-shadow-blue">
                 About Us
               </button>
               <button className="text-[#377DFF] dark:text-[#E2E2E2] inline-flex gap-2 border-[1.5px] border-[#377DFF] dark:border-[#E2E2E2] items-center py-2 px-7 rounded-[50px] shadow-[0px 4px 8px rgba(55, 125, 255, 0.5)]">

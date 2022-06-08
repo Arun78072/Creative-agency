@@ -22,13 +22,14 @@ const Banner = () => {
             when you need us for improve your business, <br /> then come with us
             to help your business have reach it, you just sit and feel that goal
           </p>
-          <button className="bg-[#377DFF] dark:bg-[#E2E2E2] text-[#FFFFFF] dark:text-[#0E0E0E] block mx-auto mt-9 py-2 px-7 rounded-[50px] shadow-[0px 4px 8px rgba(55, 125, 255, 0.5)]">
+          <button className="bg-[#377DFF] dark:bg-[#E2E2E2] text-[#FFFFFF] dark:text-[#0E0E0E] block mx-auto mt-9 py-2 px-7 rounded-[50px] drop-shadow-blue">
             Start Project
           </button>
 
           <div className="mt-20 mx-auto text-center">
             <div className="w-[fit-content] mx-auto relative">
               <motion.span
+                id="spanimg1"
                 initial="hidden"
                 whileInView="visible"
                 viewport={{ once: true }}
@@ -73,6 +74,7 @@ const Banner = () => {
                 </div>
               </div>
               <motion.span
+                id="spanimg2"
                 initial="hidden"
                 whileInView="visible"
                 viewport={{ once: true }}

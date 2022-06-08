@@ -29,10 +29,10 @@ function Testimonial() {
       <h5 className="text-center text-2xl text-[#377DFF] dark:text-[#E2E2E2] font-Quicksand font-semibold sm:text-[14px]">
         Testimonial
       </h5>
-      <h2 className="text-center text-[55px] sm:text-[24px] text-[#1D1D1D] dark:text-[#E2E2E2] font-bold my-5 sm:my-0 relative after:bg-[url('/svg/blue_pattern.svg')] after:absolute after:content-['']  after:w-[100px] after:h-[80px] after:bg-no-repeat after:-top-[100px] after:left-0 after:-z-10 after:rotate-[20deg]">
+      <h2 className="text-center text-[55px] sm:text-[24px] text-[#1D1D1D] dark:text-[#E2E2E2] font-bold my-5 sm:my-0 relative after:bg-[url('/svg/blue_pattern.svg')] after:absolute after:content-[''] after:animate-rotate after:w-[100px] after:h-[80px] after:bg-no-repeat after:-top-[100px] after:left-0 after:-z-10 after:rotate-[20deg]">
         People Talk about us
       </h2>
-      <div className="flex gap-10 justify-center flex-wrap relative after:bg-[url('/svg/blue_pattern.svg')] after:absolute after:content-['']  after:w-[100px] after:h-[80px] after:bg-no-repeat after:-bottom-[50px] after:right-0 after:-z-10 after:rotate-[20deg] ">
+      <div className="flex gap-10 justify-center flex-wrap relative after:bg-[url('/svg/blue_pattern.svg')] after:absolute after:content-['']  after:w-[100px] after:h-[80px] after:animate-wiggle1 after:bg-no-repeat after:-bottom-[50px] after:right-0 after:-z-10 after:rotate-[20deg] ">
         {Data.map((i) => (
           <motion.div
             whileHover={{ y: -10 }}

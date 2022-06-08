@@ -1,6 +1,7 @@
 import Image from "next/image";
 import { motion } from "framer-motion";
 import { HiArrowNarrowRight } from "react-icons/hi";
+import Link from "next/link";
 function Service() {
   const services = [
     {
@@ -59,7 +60,7 @@ function Service() {
               content look interesting and make people look for your business
             </p>
             <button className="text-[#377DFF] dark:text-[#E2E2E2] inline-flex gap-2  items-center float-right sm:float-left mt-8 sm:mt-4">
-              Read more
+              <Link href="/">Read more</Link>
               <HiArrowNarrowRight />
             </button>
           </div>
@@ -85,7 +86,7 @@ function Service() {
               {services.map((i) => (
                 <motion.div
                   key={i.id}
-                  className="border-2 border-[#8181811a] text-center p-6 rounded-[30px] w-64 shadow-lg lg:w-[188px]"
+                  className="border-2 border-[#8181811a] text-center p-6 rounded-[30px] w-64 hover:shadow-lg ease-in-out duration-500 lg:w-[188px]"
                   variants={item}
                 >
                   <Image src={i.img} alt={i.text} width={100} height={100} />

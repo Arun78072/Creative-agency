@@ -10,6 +10,7 @@ import { CgCloseR } from "react-icons/cg";
 const Header = () => {
   const { theme, setTheme } = useTheme();
   const [menu, setMenu] = useState("hide");
+
   useEffect(() => {
     if (menu === "hide") {
       document.body.style.overflow = "visible";
@@ -57,7 +58,7 @@ const Header = () => {
             <CgCloseR />
           </button>
         </span>
-        <ul className="flex gap-10">
+        <ul className="flex gap-10 pt-3">
           {menus.map((i) => (
             <li
               key={i.id}
@@ -67,8 +68,8 @@ const Header = () => {
               <Link href={i.link}>
                 <a
                   onClick={() => {
+                    setMenu("hide");
                     document.body.style.overflow = "visible";
-                    setMenu(menu === "hide" ? "show" : "hide");
                   }}
                 >
                   {" "}
@@ -84,7 +85,7 @@ const Header = () => {
 
   return (
     <>
-      <section className="container mx-auto pt-10">
+      <section className="container mx-auto pt-5">
         <div className="flex items-center justify-between">
           <div className=" w-[183px] h-[68px] rounded-lg px-4 py-2 flex gap-3 items-center">
             <Image

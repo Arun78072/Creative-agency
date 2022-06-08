@@ -1,6 +1,9 @@
 import Image from "next/image";
 import Link from "next/link";
+import { useState } from "react";
 function Footer() {
+  const [year, setYear] = useState(new Date().getFullYear());
+
   return (
     <>
       <section className="bg-[#383638]">
@@ -118,7 +121,7 @@ function Footer() {
             </ul>
             <hr className="w-[500px] md:w-auto mx-auto mt-4" />
             <p className="font-Quicksand text-white text-[18px] text-center mt-6">
-              Copyright @ 2022 Agency Creative. All Right Reserved
+              Copyright @ {year} Agency Creative. All Right Reserved
             </p>
           </div>
         </div>
