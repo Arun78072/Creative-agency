@@ -64,7 +64,17 @@ const Header = () => {
               className="font-Quicksand text-lg text-[#1D1D1D] dark:text-[#fff] ease-in-out duration-300 hover:-mt-[2px]"
               id={i.active}
             >
-              <Link href={i.link}>{i.name}</Link>
+              <Link href={i.link}>
+                <a
+                  onClick={() => {
+                    document.body.style.overflow = "visible";
+                    setMenu(menu === "hide" ? "show" : "hide");
+                  }}
+                >
+                  {" "}
+                  {i.name}
+                </a>
+              </Link>
             </li>
           ))}
         </ul>
